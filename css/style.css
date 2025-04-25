@@ -1,0 +1,89 @@
+.modo-juego {
+    cursor: pointer;
+}
+
+.juego-iniciado {
+    width: 250px;
+    height: 180px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.juego-iniciado#card-player {
+    justify-self: end;
+}
+
+.juego-iniciado img {
+    width: 50%;
+    height: 50%;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.juego-iniciado h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #000000;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+#tablero {
+    display: none;
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: repeat(3, 140px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.celda {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.celda:hover {
+    background-color: lightgray;
+}
+
+.logged-in .celda:hover {
+    background-color: #ffbb33;
+}
+
+.celda.x {
+    background-color: lightblue;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.logged-in {
+    background-color: #7a0c00 !important;
+    color: #e45a0a !important;
+}
+
+.logged-in .navbar {
+    background-color: #c61c0a !important;
+}
+
+.logged-in header {
+    background-color: #e45a0a !important;
+}
+
+.logged-in main {
+    background-color: #ff931e !important;
+}
+
+body {
+    transition: transform 0.4s ease-in-out;
+}
