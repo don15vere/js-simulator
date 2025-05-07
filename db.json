@@ -1,59 +1,84 @@
 {
     "users": [
         {
+            "id": 0,
+            "name": "Computer",
+            "email": "computer@computer.com",
+            "password": null
+        },
+        {
             "id": 1,
             "name": "Luciano Palacios",
             "email": "lucianonpalacios@gmail.com",
-            "role": "admin"
+            "password": "userlp"
         },
         {
             "id": 2,
             "name": "Walter Casas",
             "email": "walterocasas@gmail.com",
-            "role": "user"
+            "password": "userwc"
         },
         {
             "id": 3,
             "name": "Joaquín Arce",
             "email": "jarce@gmail.com",
-            "role": "user"
+            "password": "userja"
         },
         {
             "id": 4,
             "name": "Victor Vargas",
             "email": "victorvargas@gmail.com",
-            "role": "user"
+            "password": "uservv"
         }
     ],
-    "items": [
+    "games": [
         {
             "id": 1,
-            "name": "Remera Tateti Negra",
-            "description": "Remera de algodón negra con estampado",
-            "price": 40000,
-            "stock": 10
+            "winner_id": 1,
+            "losser_id": 2,
+            "drawers_id": []
         },
         {
             "id": 2,
-            "name": "Remera Tateti Blanca",
-            "description": "Remera de algodón blanca con estampado",
-            "price": 40000,
-            "stock": 20
+            "winner_id": null,
+            "losser_id": null,
+            "drawers_id": [1, 0]
         },
         {
             "id": 3,
-            "name": "Taza Tateti",
-            "description": "Taza de cerámica",
-            "price": 8000,
-            "stock": 15
+            "winner_id": 1,
+            "losser_id": 3,
+            "drawers_id": []
         },
         {
             "id": 4,
-            "name": "Mouse pad Tateti",
-            "description": "Mouse pad de goma",
-            "price": 10000,
-            "stock": 25
+            "winner_id": 2,
+            "losser_id": 4,
+            "drawers_id": []
+        },
+        {
+            "id": 5,
+            "winner_id": 1,
+            "losser_id": 0,
+            "drawers_id": []
+        },
+        {
+            "id": 6,
+            "winner_id": 3,
+            "losser_id": 4,
+            "drawers_id": []
+        },
+        {
+            "id": 7,
+            "winner_id": 1,
+            "losser_id": 3,
+            "drawers_id": []
+        },
+        {
+            "id": 8,
+            "winner_id": 2,
+            "losser_id": 4,
+            "drawers_id": []
         }
     ]
-        
 }
