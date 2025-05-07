@@ -109,6 +109,4 @@ document.addEventListener("DOMContentLoaded", () => {
         gameOverModal.hide();
         iniciarJuego();
     });
-    
-    console.log("App.js loaded and ready!");
 });

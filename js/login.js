@@ -6,7 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const loginModal = new bootstrap.Modal(document.getElementById("loginModal"));
 
     function getUsers() {
-        return JSON.parse(localStorage.getItem("users")) || [];
+        return fetch('https://my-json-server.typicode.com/don15vere/js-simulator/users')
+        .then((response) => response.json())
+        .catch((error) => {
+            console.error("Error fetching users:", error);
+            return [];
+        });
     }
 
     function loginUser(email) {
@@ -40,12 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    loginForm.addEventListener("submit", (event) => {
+    loginForm.addEventListener("submit", async (event) => {
         event.preventDefault();
         const email = document.getElementById("loginEmail").value;
         const password = document.getElementById("loginPassword").value;
 
-        const users = getUsers();
+        const users = await getUsers();
         const user = users.find(user => user.email === email && user.password === password);
 
         if (user) {
