@@ -1,0 +1,59 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Luciano Palacios",
+            "email": "lucianonpalacios@gmail.com",
+            "role": "admin"
+        },
+        {
+            "id": 2,
+            "name": "Walter Casas",
+            "email": "walterocasas@gmail.com",
+            "role": "user"
+        },
+        {
+            "id": 3,
+            "name": "Joaquín Arce",
+            "email": "jarce@gmail.com",
+            "role": "user"
+        },
+        {
+            "id": 4,
+            "name": "Victor Vargas",
+            "email": "victorvargas@gmail.com",
+            "role": "user"
+        }
+    ],
+    "items": [
+        {
+            "id": 1,
+            "name": "Remera Tateti Negra",
+            "description": "Remera de algodón negra con estampado",
+            "price": 40000,
+            "stock": 10
+        },
+        {
+            "id": 2,
+            "name": "Remera Tateti Blanca",
+            "description": "Remera de algodón blanca con estampado",
+            "price": 40000,
+            "stock": 20
+        },
+        {
+            "id": 3,
+            "name": "Taza Tateti",
+            "description": "Taza de cerámica",
+            "price": 8000,
+            "stock": 15
+        },
+        {
+            "id": 4,
+            "name": "Mouse pad Tateti",
+            "description": "Mouse pad de goma",
+            "price": 10000,
+            "stock": 25
+        }
+    ]
+        
+}
